@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Цвет фона (можно заменить на свой) -->
+    <solid android:color="#BA8E23" />
+
+    <!-- Скругление углов (чем больше radius, тем сильнее скругление) -->
+    <corners android:radius="32dp" />
+
+    <!-- Отступы (опционально) -->
+    <padding
+        android:left="16dp"
+        android:top="8dp"
+        android:right="16dp"
+        android:bottom="8dp" />
+</shape>

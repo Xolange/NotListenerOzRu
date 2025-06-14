@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <!-- Занимает всё свободное место -->
+
+    <!-- Логотип Ozon -->
+    <ImageView
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ozon_logo"
+        android:contentDescription="@string/ozon_logo"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your employee code to access the app."
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/blue_border">
+
+        <EditText
+            android:id="@+id/codeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"/>
+    </FrameLayout>
+
+    <!-- Крупная кнопка отправки -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/submit"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Гифка загрузки -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loadingGif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:gifSource="@drawable/loading_animation"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Текст копирайта -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="148dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:gravity="bottom"
+        android:text="@string/copyright_text"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+</LinearLayout>
