@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your employee code to access the app."
+        android:text="Введите свой код для доступа к приложению"
         android:textSize="15sp"
         android:textColor="@color/black"
         android:gravity="center"
